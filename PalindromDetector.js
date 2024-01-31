@@ -24,6 +24,12 @@ class PalindromDetector {
         }
         return wordInReverse.join("");
     }
+
+    // Metodi joka ottaa sanan parametrina ja tarkistaa onko se palindromi.
+    isPalindrom(userInput) {
+        let userInputReverse = this.#reverseWord(userInput);
+        return userInputReverse === userInput ? true: false;
+    }
     
 }
 
