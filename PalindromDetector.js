@@ -26,7 +26,7 @@ class PalindromDetector {
     }
 
     // Metodi joka ottaa sanan parametrina ja tarkistaa onko se palindromi.
-    isPalindrom(userInput) {
+    isPalindrom2(userInput) {
         let userInputReverse = this.#reverseWord(userInput);
         return userInputReverse === userInput ? true: false;
     }
@@ -37,4 +37,7 @@ let detector = new PalindromDetector();
 let result = new String();
 
 result = detector.isPalindrom();
+console.log(result);
+
+result = detector.isPalindrom2("saippuakauppias");
 console.log(result);
